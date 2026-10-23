@@ -15,10 +15,6 @@ Fine Downloader is a desktop application built with Python and PyQt6, powered by
 - **Download history:** Retain download history between sessions.
 - **yt-dlp updates:** Update yt-dlp using the project's supported update mechanism.
 
-## Screenshots
-
-Add screenshots of the application here to help users preview the interface.
-
 ## Installation
 
 ### Linux Mint / Ubuntu
@@ -86,7 +82,7 @@ Fine Downloader does not grant permission to download any particular content.
 
 ## Version
 
-Current release: **1.1.1**
+Current release: **1.2.0**
 
 See [CHANGELOG.md](CHANGELOG.md) for version history and changes.
 
