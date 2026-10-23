@@ -1,96 +1,121 @@
 # Fine Downloader
 
-**A lightweight desktop video and audio downloader.**
+### A simple, lightweight desktop video and audio downloader.
 
-Fine Downloader is a desktop application built with Python and PyQt6, powered by [yt-dlp](https://github.com/yt-dlp/yt-dlp). It provides a clean graphical interface for downloading online media with configurable quality and output locations.
+Fine Downloader is a desktop application built with Python and PyQt6, powered by [yt-dlp](https://github.com/yt-dlp/yt-dlp). It provides an intuitive way to download videos, extract audio, manage playlists, and organize multiple downloads through a convenient queue.
+
+<p align="center">
+  <strong>Video · Audio · Playlists · Queue</strong>
+</p>
+
+---
+
+## Screenshots
+
+### Main Interface
+
+<!-- Save your screenshot as assets/main-window.png -->
+
+![Fine Downloader main interface](assets/screenshot.png)
+
+### Logo
+
+<!-- Save your screenshot as assets/playlist-queue.png -->
+
+![Fine Downloader playlist and download queue](assets/fine-downloader.svg)
+
+---
 
 ## Features
 
-- **Simple interface:** Download media through a graphical desktop application.
-- **Video downloads:** Select from available video quality options.
-- **Audio downloads:** Extract audio into supported formats.
-- **Progress tracking:** Monitor download progress, speed, and estimated time remaining where available.
-- **Custom save locations:** Choose where downloaded files are stored.
-- **Persistent settings:** Keep application preferences between launches.
-- **Download history:** Retain download history between sessions.
-- **yt-dlp updates:** Update yt-dlp using the project's supported update mechanism.
+- **Video Downloads:** Download videos in available quality options.
+- **Audio Downloads:** Extract audio in supported formats.
+- **Playlist Support:** Download videos from supported playlists.
+- **Download Queue:** Organize and manage multiple downloads.
+- **Progress Tracking:** Monitor download progress, speed, and estimated time remaining where available.
+- **Custom Download Locations:** Choose where your downloaded files are saved.
+- **Persistent Settings:** Keep preferences between application sessions.
+- **Download History:** Access previously recorded download history.
+- **yt-dlp Integration:** Leverage yt-dlp's supported media extractors.
+- **FFmpeg Integration:** Merge separate audio and video streams and process media where supported.
+
+Available formats, quality options, and features depend on the source and the installed dependencies.
 
 ## Installation
 
 ### Linux Mint / Ubuntu
 
-Download the latest compatible `.deb` installer from the project's GitHub Releases page.
+1. Open the [Releases](../../releases) page.
+2. Download `fine-downloader_1.2.0_amd64.deb`.
+3. Open a terminal in the directory containing the downloaded file.
+4. Install the package:
 
-Install it using:
+   ```bash
+   sudo apt install ./fine-downloader_1.2.0_amd64.deb
+   ```
 
-```bash
-sudo apt install ./fine-downloader_VERSION_amd64.deb
-```
+5. Launch Fine Downloader from your application menu or run:
 
-Replace `fine-downloader_VERSION_amd64.deb` with the actual downloaded filename.
+   ```bash
+   fine-downloader
+   ```
 
-Launch the application from your application menu or run:
-
-```bash
-fine-downloader
-```
-
-### Dependencies
-
-The application uses:
-
-- Python
-- PyQt6
-- yt-dlp
-- FFmpeg for supported media merging and processing
-
-The Debian package declares its required system dependencies. Install requirements according to the project's documentation when running from source.
+The package is intended for compatible 64-bit Intel/AMD Linux systems. Required system dependencies should be installed through the package manager.
 
 ## Usage
 
-1. Open Fine Downloader.
-2. Paste a supported media URL.
+1. Launch Fine Downloader.
+2. Paste a supported video URL.
 3. Fetch the available media information.
-4. Choose the desired download quality or audio option.
-5. Select an output location.
-6. Start the download and monitor its progress.
+4. Choose the desired video quality or audio option.
+5. Add downloads to the queue as needed.
+6. For supported playlists, select the playlist content you want to download.
+7. Choose your destination folder and start downloading.
+8. Monitor progress through the application's interface.
 
-Available options depend on the source website and the media formats it provides.
+Exact options depend on the installed version and source website.
+
+## Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| Python | Application logic |
+| PyQt6 | Desktop graphical interface |
+| yt-dlp | Media extraction and downloading |
+| FFmpeg | Supported media merging and processing |
 
 ## Updating yt-dlp
 
-Fine Downloader includes a project-supported mechanism for updating yt-dlp. See the project documentation for instructions and supported options.
+Fine Downloader provides a project-supported mechanism for updating yt-dlp. Refer to the project documentation and update script for instructions.
 
 ## Compatibility
 
-- **Current packaged platform:** Linux Mint / Ubuntu-based Linux, 64-bit Intel/AMD.
-- **Other platforms:** Support must be verified separately before being advertised.
-- **Android:** Planned, not currently advertised as a released platform.
+- **Available packaged platform:** Linux Mint and compatible Ubuntu-based Linux distributions.
+- **Architecture:** 64-bit Intel/AMD (`amd64`).
+- **Windows and macOS:** Not advertised as supported unless separately built and tested.
+- **Android:** Planned for a future version; no Android support is implied by this release.
 
 ## Responsible Use
 
-Use Fine Downloader only for media you own, have permission to download, or are otherwise legally entitled to save. Respect applicable copyright laws, website terms, and access restrictions.
+Use Fine Downloader only for content you own, have permission to download, or are otherwise legally entitled to save.
 
-Fine Downloader does not grant permission to download any particular content.
+Respect copyright laws, website terms of service, and applicable access restrictions. Fine Downloader does not grant permission to download particular content.
 
-## Technology
+## Release
 
-- [Python](https://www.python.org/)
-- [PyQt6](https://www.riverbankcomputing.com/software/pyqt/)
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-- [FFmpeg](https://ffmpeg.org/)
+**Current version: 1.2.0**
 
-## Version
+Download the installer from the [GitHub Releases](../../releases) page.
 
-Current release: **1.2.0**
-
-See [CHANGELOG.md](CHANGELOG.md) for version history and changes.
+See [CHANGELOG.md](CHANGELOG.md) for version history, if available in this repository.
 
 ## License
 
-The project's license has not yet been specified. A license should be added before distributing the source code for reuse.
+A license has not been specified in this README. Check the repository for an existing `LICENSE` file before adding or selecting one.
 
 ---
 
-**Fine Downloader**  
-*Simple. Lightweight. Built for your desktop.*
+<p align="center">
+  <strong>Fine Downloader</strong><br>
+  Simple. Lightweight. Built for your desktop.
+</p>
