@@ -16,7 +16,7 @@ Fine Downloader is a desktop application built with Python and PyQt6, powered by
 
 <!-- Save your screenshot as assets/main-window.png -->
 
-![Fine Downloader main interface](assets/screenshot.png)
+![Fine Downloader main interface](assets/Screenshot.png)
 
 ### Logo
 
